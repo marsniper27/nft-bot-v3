@@ -276,7 +276,7 @@ async function fetchTradingVariables(){
 			const id = await nftContract5.methods.tokenOfOwnerByIndex(process.env.PUBLIC_KEY, i).call();
 			nfts.push({id: id, type: 5});
 		}
-
+		nfts.push({id:593, type 1});
 		let pairsPromises = [];
 		for(var i = 0; i < pairsCount; i++){
 			pairsPromises.push(pairsStorageContract.methods.pairsBackend(i).call());
